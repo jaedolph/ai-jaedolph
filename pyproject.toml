@@ -1,0 +1,34 @@
+[project]
+name = "ai-jaedolph"
+description = "AI chatbot with TTS used for Jaedolph's stream"
+version = "0.0.1"
+authors = [
+    { name = "Jaedolph - Lord of Games" }
+]
+dependencies = [
+    "flask==3.*",
+    "gunicorn>=23.0.0",
+    "google-genai"
+]
+requires-python = "~= 3.13.0"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["ai_jaedolph"]
+
+[tool.black]
+line-length = 100
+
+[tool.docformatter]
+wrap-summaries = 100
+wrap-descriptions = 100
+
+[tool.pylint]
+load-plugins = ["pylint.extensions.docparams", "pylint.extensions.docstyle"]
+max-args = 10
+max-attributes = 10
+generated-members = "codes.*"
+disable = ["fixme"]

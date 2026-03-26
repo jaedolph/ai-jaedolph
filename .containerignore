@@ -1,0 +1,12 @@
+*.wav
+ai_jaedolph.ini
+*.bak
+__pycache__/
+.vscode
+.tox
+.coverage
+htmlcov
+*.egg-info
+*.log
+venv
+build

@@ -1,0 +1,10 @@
+[gemini]
+api_key = abcdefghijklmnopqrstuvwxyz1234567
+model = gemini-3-flash-preview
+system_prompt_file = /usr/src/app/ai_jaedolph_system_prompt.txt
+temperature = 1
+
+[voicebox]
+url = http://voicebox:17493
+profile_id = abcd1234-efgh-ijkl-5678-123456abcd
+file_output_path = /tts_output.wav
