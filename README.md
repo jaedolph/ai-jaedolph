@@ -24,21 +24,12 @@ podman unshare chown -R 1001:0 ~/tts_output/
 podman run \
     -d \
     --name ai-jaedolph \
-    -v ~/ai_jaedolph.ini:/usr/src/app/ai_jaedolph.ini \
-    -v ~/ai_jaedolph_system_prompt.txt:/usr/src/app/ai_jaedolph_system_prompt.txt \
+    -v ~/ai_jaedolph.ini:/usr/src/app/ai_jaedolph.ini:Z \
+    -v ~/ai_jaedolph_system_prompt.txt:/usr/src/app/ai_jaedolph_system_prompt.txt:Z \
     -v ~/tts_output:/tts_output:z \
     -p 127.0.0.1:8001:8001 \
     docker.io/jaedolph/ai-jaedolph:latest
 ```
-
-podman run \
-    -d \
-    --name ai-jaedolph \
-    -v ~/ai_jaedolph.ini:/usr/src/app/ai_jaedolph.ini \
-    -v ~/ai_jaedolph_system_prompt.txt:/usr/src/app/ai_jaedolph_system_prompt.txt \
-    -v ~/tts_output:/tts_output:z \
-    -p 127.0.0.1:8001:8001 \
-    localhost/ai-jaedolph:latest
 
 ## Development
 
