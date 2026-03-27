@@ -61,7 +61,7 @@ pycparser==3.0
     # via cffi
 pydantic==2.12.5
     # via google-genai
-pydantic-core==2.41.5
+pydantic-core==2.44.0
     # via pydantic
 requests==2.33.0
     # via
