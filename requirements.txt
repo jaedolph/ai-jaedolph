@@ -29,7 +29,7 @@ google-auth==2.49.1
     # via google-genai
 google-genai==1.68.0
     # via ai-jaedolph (pyproject.toml)
-gunicorn==25.2.0
+gunicorn==25.3.0
     # via ai-jaedolph (pyproject.toml)
 h11==0.16.0
     # via httpcore
