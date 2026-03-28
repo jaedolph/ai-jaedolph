@@ -9,7 +9,7 @@ Relies on the following components:
 ## Config
 Example config file is found [here](ai_jaedolph.ini.example)
 
-The system prompt used for AI Jaedolph is included [here](system_prompt.txt) and can be modified.
+The system prompt used for AI Jaedolph is included [here](ai_jaedolph_system_prompt.txt) and can be modified.
 
 ## Run with podman
 
@@ -20,6 +20,7 @@ Fix rootless permissions on output directory:
 podman unshare chown -R 1001:0 ~/tts_output/
 ```
 
+Run the container:
 ```
 podman run \
     -d \
