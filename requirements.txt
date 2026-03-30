@@ -27,7 +27,7 @@ flask==3.1.3
     # via ai-jaedolph (pyproject.toml)
 google-auth==2.49.1
     # via google-genai
-google-genai==1.68.0
+google-genai==1.69.0
     # via ai-jaedolph (pyproject.toml)
 gunicorn==25.3.0
     # via ai-jaedolph (pyproject.toml)
