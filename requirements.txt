@@ -83,5 +83,5 @@ urllib3==2.6.3
     # via requests
 websockets==16.0
     # via google-genai
-werkzeug==3.1.7
+werkzeug==3.1.8
     # via flask
